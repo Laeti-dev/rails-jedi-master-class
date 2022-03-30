@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'autoprefixer-rails', '10.2.5'
-gem 'font-awesome-sass', '~> 5.15.1'
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'font_awesome5_rails'
 gem 'simple_form'
 gem 'pundit'

@@ -32,11 +32,12 @@
   <div class="row justify-content-around lessons">
     <% @lessons.each do |lesson| %>
       <div class="lesson-card <%= current_user&.side&.downcase %> my-3">
-        <% if lesson.skill_picture.attached? %>
-          <%= cl_image_tag lesson.skill_picture.key, class: "card-img" %>
-        <% else %>
+        <%# <% if lesson.skill_picture.attached? %>
+          <%# <%= cl_image_tag lesson.skill_picture.key, class: "card-img" %>
+          <%# <%= image_tag lesson.skill, class: "card-img", :alttext %>
+        <%# <% else %>
           <%= image_tag "banner.jpg", class: "w-100 card-img" %>
-        <% end %>
+        <%# <% end %>
 
 
         <div class="p-3">
@@ -49,4 +50,3 @@
     <% end %>
   </div>
 </div>
-
